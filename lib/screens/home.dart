@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:bmi/constants/app_constants.dart';
 import 'package:bmi/widgets/left_bar.dart';
 import 'package:bmi/widgets/right_bar.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -43,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   //This display the top left number
                   Container(
-                    width: 130,
+                    width: 480,
                     child: TextField(
                       controller: _heightController,
                       style: TextStyle(
@@ -51,6 +52,11 @@ class _HomeScreenState extends State<HomeScreen> {
                           fontWeight: FontWeight.w300,
                           color: accentHexColor),
                       keyboardType: TextInputType.number,
+                      //InputFormatters limit the dataType of input
+                      inputFormatters: [
+                        FilteringTextInputFormatter.allow(
+                            RegExp(r'(^-?\d*\.?\d*)'))
+                      ],
                       decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: "Height (In Meters)",
@@ -62,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     //You can add multiple containers in a Row(), or something like that
                   ),
                   Container(
-                    width: 180,
+                    width: 280,
                     child: TextField(
                       controller: _weightController,
                       style: TextStyle(
@@ -70,6 +76,11 @@ class _HomeScreenState extends State<HomeScreen> {
                           fontWeight: FontWeight.w300,
                           color: accentHexColor),
                       keyboardType: TextInputType.number,
+                      //InputFormatters limit the dataType of input
+                      inputFormatters: [
+                        FilteringTextInputFormatter.allow(
+                            RegExp(r'(^-?\d*\.?\d*)'))
+                      ],
                       decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: "Weight (In Kg)",
