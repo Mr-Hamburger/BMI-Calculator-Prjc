@@ -1,6 +1,8 @@
-# testr
+# Body-Mass Index Calculator
 
-A new Flutter project.
+My first Flutter project where I created an app as a learning project instructed by Santos Enoque on YouTube. From this project, I learned the basic concepts of creating a Flutter App, from creating classes to making widgets and implementing different widgets to build this app. 
+
+Source codes are included in the 'lib' folder, learning notes are also taken as comments in the codes themselves. This was a great introductory project to Flutter and I am very excited to learn more about Flutter, Software Development, and potentionally pursuit a minor in Software Enginerring.
 
 ## Getting Started
 
