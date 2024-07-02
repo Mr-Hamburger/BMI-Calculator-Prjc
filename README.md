@@ -1,9 +1,16 @@
-# BMI-Calculator-Prjc
-A Body-Mass Index Calculator I Created As My First Flutter Learning Project
+# testr
 
-This project was created from a design idea online and using the tutorial of Santos Enoque, a project based Flutter learning lesson. In this lesson, I built an app where users can input their height (In meters) and their weight (In kilograms) to calculate whether they are currently under, over, or in a good weight under the Body-Mass Index formula.
+A new Flutter project.
 
-In this lesson, I've learned:
-- Basic concepts of App Development
-- Creating a Flutter dev environment for app development
-- Many Flutter widgets and the usages of them such as Container, BoxDecoration, Text, GestureDetector
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
